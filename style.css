@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap");
 *,
 *::after,
 *::before {
@@ -6,7 +7,50 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: #091450;
+  color: #fff;
+}
+
 div#app {
   max-width: 900px;
   margin: 0 auto;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 1.2rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: fit-content;
+  padding: 2rem;
+  background-color: #fff;
+  color: #000;
+
+  border: 2px solid;
+  border-radius: 0.9rem;
+}
+
+.card p {
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  div#app {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
+  .card {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
 }
