@@ -1,6 +1,6 @@
 const prayerTimes = async (latitude, longitude) => {
   await fetch(
-    `http://api.aladhan.com/v1/hijriCalendar?latitude=${latitude}&longitude=${longitude}&method=2`
+    `https://api.aladhan.com/v1/hijriCalendar?latitude=${latitude}&longitude=${longitude}&method=2`
   )
     .then((res) => res.json())
     .then((response) => {
